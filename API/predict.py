@@ -1,8 +1,8 @@
 from joblib import load
 
 class Predict:
-    vector = load('/Users/kishanmishra/Desktop/Sentiment-DRP/Main/API/vectors.joblib')
-    models = load('/Users/kishanmishra/Desktop/Sentiment-DRP/Main/API/model.joblib')
+    vector = load('API/vectors.joblib')
+    models = load('API/model.joblib')
 
     def predict(self,a):
         text = [a['String']]
